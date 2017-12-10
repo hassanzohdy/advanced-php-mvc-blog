@@ -1,0 +1,637 @@
+/* Common */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+button:focus, input:focus, select:focus, a:focus, textarea:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 7px 14px;
+    border: 1px solid #999;
+}
+
+.input:focus {
+    border-color: #FF3300;
+}
+
+::selection {
+    background: #000;
+    color: #FFF;
+}
+
+::-moz-selection {
+    background: #000;
+    color: #FFF;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    border: 1px solid #333;
+    color: #FFF;
+    text-align: center;
+    padding: 7px 14px;
+    background: #000;
+    margin: 6px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Open Sans', Arial;
+    background: #eee;
+}
+
+/* Social Media */
+
+a.facebook {
+    background: #4E71A8;
+}
+
+a.twitter {
+    background: #1CB7EB;
+}
+
+a.google {
+    background: #E3411F;
+}
+
+a.youtube {
+    background: #EB2429
+}
+
+a.instagram {
+    background: #297A7A;
+}
+
+a.pinterest {
+    background: #CB211D;
+}
+
+a.rss {
+    background: #F86811
+}
+
+/** Social Media */
+
+/** Common */
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+    top: 0;
+}
+
+header .navbar {
+    background: #FFF;
+    box-shadow: 0px 1px 1px 0px #ccc;
+    border: none;
+}
+
+header .navbar a {
+    color: #000;
+    font-weight: bold;
+}
+
+header .navbar li a:focus {
+    background: #000;
+    color: #FFF;
+}
+
+header .navbar li a:hover,
+header .navbar li.active a {
+    color: #FFF;
+    background: #000;
+}
+
+header .navbar .dropdown.open > a {
+    background: #000;
+    color: #FFF;
+}
+
+header .navbar-toggle {
+    border: 1px solid #000;
+    background: #FFF;
+}
+
+header .navbar-toggle:hover {
+    background: #000;
+}
+
+header .navbar-toggle .icon-bar {
+    background: #000;
+}
+
+header .navbar-toggle:hover .icon-bar {
+    background: #FFF;
+}
+
+header .navbar-collapse.in {
+    max-height: 200px;
+    overflow: auto;
+    border-top: 1px solid #000;
+}
+
+header .navbar-collapse.in a {
+    border-bottom: 1px solid #eee;
+}
+
+header .navbar-right .dropdown {
+    margin-top: -6px;
+}
+
+header .user-dropdown:hover {
+    background: #FFF !important;
+    color: #000 !important;
+}
+
+
+header .user-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/** Header */
+
+/* Content */
+#content {
+    padding: 55px 0 40px;
+    overflow: hidden;
+}
+
+/* SLideshow */
+#slideshow {
+    margin-bottom: 30px;
+}
+
+/** SLideshow */
+
+/* Box */
+.box {
+    background: #FFF;
+    box-shadow: 0px 0px 2px 0px #ccc;
+}
+/** Box */
+
+/* Post Box */
+
+.post-box {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.post-box .post-content {
+    padding: 7px 14px;
+}
+
+.post-box .image-box {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.post-box .image-box img {
+    width: 100%;
+    box-shadow: 0px 0px 1px 0px #000;
+}
+
+.post-box .social-icons {
+    margin-top: 15px;
+    color: #000;
+    font-size: 20px;
+}
+
+.post-box .social-icons a {
+    color: #FFF;
+    border-radius: 50%;
+    margin: 0px 4px;
+    margin: 0px 3px;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+}
+
+.post-box .social-icons a:hover {
+    text-decoration: none;
+}
+
+.post-box .date-container {
+    color: #999;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+}
+
+.post-box .date-container .fa {
+    margin: 0 3px;
+}
+
+.post-box .heading {
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 40px;
+    color: #FF3300;
+}
+.post-box .heading a {
+    color: #FF3300;
+}
+
+.post-box .details {
+    margin: 20px 0;
+    line-height: 2;
+}
+
+.post-box .read-more {
+    padding: 6px 14px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    transition: all 0.3s;
+    background: #000;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.post-box .read-more:hover {
+    text-decoration: none;
+    background: #FFF;
+    color: #000;
+}
+
+.post-box .post-box-footer {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.post-box .post-box-footer a {
+    display: inline-block;
+    float: left;
+    width: 33%;
+    border: 1px solid #eee;
+    padding: 10px;
+    color: #000;
+    font-weight: 100;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.post-box .post-box-footer a:hover {
+    text-decoration: none;
+}
+
+.post-box .post-box-footer a:hover .main {
+    font-weight: bold;;
+}
+
+/** Post Box */
+
+/* Widget */
+#widget .box {
+    margin-bottom: 40px;
+}
+
+#widget .box .heading {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#widget .box .content {
+    padding: 10px;
+}
+
+/* Social Media Widget */
+#widget #social-widget {
+    text-align: center;
+}
+
+#widget #social-widget .content {
+    padding: 7px 5px 10px;
+}
+
+#widget #social-widget .content a {
+    color: #FFF;
+    border-radius: 50%;
+    margin: 0px 4px;
+    margin: 0px 3px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+}
+
+/** Social Media Widget */
+
+/* Categories widget */
+#widget #categories-widget .content a {
+    display: block;
+    color: #000;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+#widget #categories-widget .content a .total-posts {
+    float: right;
+    background: #FF3300;
+    color: #FFF;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+/** Categories Widget */
+
+/* Popular Posts Widget */
+#widget #popular-posts-widget .content a {
+    display: block;
+    color: #000;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#widget #popular-posts-widget .content a:last-child {
+    border-bottom: none;
+}
+
+/** Popular Posts Widget */
+
+
+#widget #ads-widget .ad {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    background: #FFF;
+    padding: 10px;
+    box-shadow: 0px 0px 1px 0px #ccc;
+}
+
+#widget #ads-widget .ad img {
+    width: 100%;
+    max-height: 200px;
+}
+
+/** Widget */
+
+/* Breadcrumb */
+#content .breadcrumb {
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+#content .breadcrumb li a {
+    font-size: 16px;
+    color: #000;                              
+}
+
+#content .breadcrumb li.active {
+    color: #FF3300;
+    font-weight: bold;
+}
+
+/** Breadcrumb */
+
+/** Content */
+
+/* Footer */
+footer {
+    background: #FFF;
+    padding: 7px;
+    box-shadow: 0px 0px 2px 0px #ccc;
+    margin-top: 10px;
+    color: #333;
+    overflow: hidden;
+}
+
+footer.fixed-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer .copyrights {
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+footer .social {
+    float: right;
+}
+
+footer .social a {
+    color: #FFF;
+    border-radius: 50%;
+    margin: 0px 4px;
+    margin: 0px 3px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+}
+/** Footer */
+
+/* Pages */
+.page {
+    background: #FFF;
+    margin-top: 50px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.page .heading {
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.page .form-group {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.page label {
+    text-align: right;
+    margin-top: 8px;
+    padding-right: 0;
+}
+
+.page .centered-content {
+    width: 80%;
+    margin: auto;
+}
+
+/* Registration Page */
+#register-page {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/** Registration Page */
+
+/* Login Page */
+#login-page {
+    margin: 50px auto;
+    width: 50%;
+}
+
+#login-page .heading {
+    font-size: 24px;
+}
+
+/** Login Page */
+
+/* Category Page */
+#category-page .col-sm-6 {
+    padding: 0px 5px;
+}
+
+#category-page .post-box .heading {
+    font-size: 20px;
+}
+
+/** Category Page */
+
+/* Post Page */
+#post-page .post-box {
+    padding-bottom: 20px;
+}
+
+#post-page .post-box .details:first-letter {
+    font-size: 50px;
+    background: #000;
+    color: #FFF;
+    padding: 4px 10px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#post-page #post-author {
+    border-top: 1px solid #ccc;
+    margin: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+#post-page #post-author img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    border: 1px solid #eee;
+}
+
+#post-page #post-author .author-detials {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#post-page #post-author .name {
+    float: left;
+    font-weight: bold;
+    margin-left: 17px;
+    margin-top: 35px;
+    display: block;
+}
+
+#post-page #total-comments {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+#post-page .comment {
+    overflow: hidden;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#post-page .comment .author-image {
+    float: left;
+}
+
+#post-page .comment img {
+    width: 70px;
+    height: 70px;
+}
+
+#post-page .comment .comment-container {
+    float: right;
+    width: calc(100% - 70px);
+    padding:0 10px;
+}
+
+#post-page .comment .comment-container .comment-date {
+    color: #999;
+    padding: 2px 0;
+}
+
+#post-page .comment .comment-container .author-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Comment Form */
+
+#post-page #comment-form {
+    padding: 1px 10px 10px;
+    overflow: hidden;
+}
+
+#post-page #comment-form .heading {
+    font-weight: bold;
+}
+
+#post-page #comment-form textarea {
+    resize: none;
+    overflow: auto;
+}
+
+#post-page #comment-form .comment-button {
+    background: #000;
+    color: #FFF;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 14px;
+    margin-top: 10px;
+    float: right;
+}
+
+/** Comment Form */
+
+/** Post Page */
